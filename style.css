@@ -1,0 +1,507 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    justify-content: center;
+    display:inline-flex;
+    align-items: center;
+    border-radius: 50%
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+.prit{
+    width: 40px;
+    height: 40px;
+    
+}
+/* Hero Section */
+.hero {
+    background: url('img/carousel-1.jpg') no-repeat center center/cover ;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #fb873f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Courses Section */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.btn {
+    margin-top: 10px;
+}
+/* Footer */
+/* Footer Styling */
+.footer {
+    background-color: #1c1e3e; /* Darker navy blue */
+    color: white;
+    padding: 50px 0;
+    margin-top: 50px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fb873f; /* Primary color for hover */
+    text-decoration: underline;
+}
+
+/* Quick Links and Contact */
+.footer p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.footer .btn-social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fb873f;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer .btn-social i {
+    font-size: 1.2rem;
+    line-height: inherit;
+}
+
+.footer .btn-social:hover {
+    background-color: #ffffff;
+    color: #fb873f;
+    border: 1px solid #fb873f;
+}
+
+/* Newsletter Subscription */
+.position-relative {
+    position: relative;
+}
+
+.position-relative input {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    width: 70%;
+}
+
+.position-relative button {
+    background-color: #fb873f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.position-relative button:hover {
+    background-color: #ffffff;
+    color: #fb873f;
+    border: 1px solid #fb873f;
+}
+
+/* Copyright Section */
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #cccccc;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.copyright a:hover {
+    color: #fb873f;
+}
+
+/* Scroll to Top Button */
+.footer .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fb873f;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.footer .scroll-to-top:hover {
+    background-color: white;
+    color: #fb873f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-lg-4 {
+        margin-bottom: 30px;
+    }
+
+    .position-relative {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .position-relative input {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .position-relative button {
+        width: 30%;
+    }
+
+    .btn-social {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}   
+/* General Styles for Authentication Pages */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.auth-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.auth-container button {
+    padding: 10px 15px;
+    background-color: #fb873f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.auth-container a {
+    color: #fb873f;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 20px;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Form Styles inside Modal */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.modal-content input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.modal-content button {
+    padding: 10px 15px;
+    background-color: #fb873f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px;
+    }
+}
+
+
+/* prit course 1 */
+.course-1{
+    border: 0.25rem solid black;
+    text-align: center;
+    width: 270px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+
+}
+.course-1 img{
+    width: 200px;;
+    height: 200px;
+    
+
+}
+.course-2{
+    border: 0.25rem solid black;
+    width: 270px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.course-2 img{
+    width:200px;
+    height: 200px;
+
+}
+.course-3{
+    border: 0.25rem solid black;
+    width: 270px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+.course-3 img{
+    width:200px;
+    height: 200px;
+
+}
+.course-4{
+    border: 0.25rem solid black;
+    width: 270px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+.course-4 img{
+    width:200px;
+    height: 200px;
+
+}
+.row{
+    display: inline-flex;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+/* prit end courses */
+
+/* prit footer */
+.container py-5{
+    display: inline-flex;
+    border: 0.5rem solid #fb873f;
+}
+.footer_index{
+    text-align: justify;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+       color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    display: flex;
+}
+
+
+/* prit end footer */
